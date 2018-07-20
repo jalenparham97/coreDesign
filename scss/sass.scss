@@ -132,15 +132,74 @@ header {
   margin-right: 50px;
 }
 
+
+
+.main-2 {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  & .img-1 {
+    margin-right: 50px;
+    width: 350px;
+    height: 300px;
+    border-radius: 3px;
+    border: 5px solid $ice-blue;
+  }
+
+  & .img-2 {
+    margin-right: 50px;
+    width: 350px;
+    height: 300px;
+    border-radius: 3px;
+    border: 5px solid $ice-blue;
+  }
+
+  & .div-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  & h4 {
+    font-size: 35px;
+    color: $darker-blue;
+  }
+
+  & .h4 {
+    margin-top: 70px;
+  }
+
+  & p {
+    color: $darker-blue;
+    font-size: 20px;
+    line-height: 2.5;
+  }
+}
+
+footer {
+  background: $ice-blue;
+  display: flex;
+  justify-content: space-between;
+
+  & .who {
+    margin-left: 50px;
+  }
+
+  & .where {
+    margin-right: 50px;
+  }
+
+}
+
+
 @media only screen and (max-width: 800px) {
   .main-1 {
     flex-direction: column;
   }
 
-
+  .div-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-
-
-
-
-
