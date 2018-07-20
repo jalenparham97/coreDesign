@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 $glacier-blue:#1995ad;
 $darker-blue:#187588;
 $light-grey:#f1f1f2;
@@ -9,6 +11,10 @@ $white: #fff;
 *, {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav {
@@ -58,7 +64,7 @@ header {
   & h1 {
     padding-top: 170px;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
     color: $darker-blue;
   }
 
@@ -72,6 +78,7 @@ header {
     background: $ice-blue;
     border-radius: 3px;
     color: $darker-blue;
+    font-size: 30px;
     font-weight: bold;
     padding: 15px 20px;
     margin-top: 30px;
@@ -164,6 +171,7 @@ header {
     margin-top: 50px;
   }
 
+
   & h4 {
     font-size: 35px;
     color: $darker-blue;
@@ -176,7 +184,7 @@ header {
   & p {
     color: $darker-blue;
     font-size: 20px;
-    line-height: 2.5;
+    line-height: 2;
   }
 }
 
@@ -185,7 +193,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   margin-top: 100px;
   border-top: 5px solid $darker-blue;
 
@@ -276,5 +284,17 @@ footer {
     & .what, .where {
       margin-top: 50px;
     }
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-2 {
+    margin-left: 50px;
+    margin-right: 0;
   }
 }
