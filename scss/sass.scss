@@ -1,10 +1,146 @@
-$blue-sky:#4cb5f5;
-$grey:#b7b8b6;
-$dark-blue:#34675c;
-$green:#b3c100;
+$glacier-blue:#1995ad;
+$darker-blue:#187588;
+$light-grey:#f1f1f2;
+$grey:#bcbabe;
+$warm-grey:#777;
+$ice-blue:#a1d6e2;
+$white: #fff;
 
-* {
+*, {
   margin: 0;
   padding: 0;
 }
+
+.nav {
+  background: $ice-blue;
+  border-bottom: 2px solid $darker-blue;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 0;
+  
+  & .logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: $darker-blue;
+    font-weight: bold;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  & .nav-item {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: $darker-blue;
+    font-weight: bold;
+
+    &:hover {
+      color: rgba($darker-blue, .8);
+    }
+  }
+}
+
+header {
+  background-image: url(../img/img-2.jpg);
+  background-size: cover;
+  height: 95vh;
+  text-align: center;
+
+  & h1 {
+    padding-top: 170px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $darker-blue;
+  }
+
+  & div {
+    margin-top: 50px;
+  }
+
+  & .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $ice-blue;
+    border-radius: 3px;
+    color: $darker-blue;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 30px;
+
+    &:hover {
+      background: rgba($ice-blue, .8);
+      color: rgba($darker-blue, .8);
+    }
+  }
+}
+
+.main-1 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  & .div-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    border: 2px solid $darker-blue;
+    border-radius: 3px;
+    padding: 50px;
+  }
+
+  .font-a {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .div {
+    width: 100px;
+    height: 100px;
+    background: $darker-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 40px;
+    color: $white;
+  }
+
+  & .des {
+    margin-top: 50px;
+
+    & p {
+      color: $darker-blue;
+      font-size: 20px;
+    }
+  }
+}
+
+.main {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-1 {
+    flex-direction: column;
+  }
+
+
+}
+
+
+
+
 

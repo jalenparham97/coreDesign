@@ -1,3 +1,98 @@
 * {
   margin: 0;
   padding: 0; }
+
+.nav {
+  background: #a1d6e2;
+  border-bottom: 2px solid #187588; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 0; }
+  nav .logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: #187588;
+    font-weight: bold; }
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none; }
+  ul .nav-item {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #187588;
+    font-weight: bold; }
+    ul .nav-item:hover {
+      color: rgba(24, 117, 136, 0.8); }
+
+header {
+  background-image: url(../img/img-2.jpg);
+  background-size: cover;
+  height: 95vh;
+  text-align: center; }
+  header h1 {
+    padding-top: 170px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #187588; }
+  header div {
+    margin-top: 50px; }
+  header .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #a1d6e2;
+    border-radius: 3px;
+    color: #187588;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 30px; }
+    header .btn:hover {
+      background: rgba(161, 214, 226, 0.8);
+      color: rgba(24, 117, 136, 0.8); }
+
+.main-1 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .main-1 .div-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    border: 2px solid #187588;
+    border-radius: 3px;
+    padding: 50px; }
+  .main-1 .font-a {
+    display: flex;
+    justify-content: center; }
+  .main-1 .div {
+    width: 100px;
+    height: 100px;
+    background: #187588;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 40px;
+    color: #fff; }
+  .main-1 .des {
+    margin-top: 50px; }
+    .main-1 .des p {
+      color: #187588;
+      font-size: 20px; }
+
+.main {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+@media only screen and (max-width: 800px) {
+  .main-1 {
+    flex-direction: column; } }
