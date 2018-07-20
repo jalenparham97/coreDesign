@@ -4,7 +4,7 @@
 
 .nav {
   background: #a1d6e2;
-  border-bottom: 2px solid #187588; }
+  border-bottom: 5px solid #187588; }
 
 nav {
   display: flex;
@@ -70,6 +70,8 @@ header {
     border: 2px solid #187588;
     border-radius: 3px;
     padding: 50px; }
+    .main-1 .div-content:hover {
+      background: #a1d6e2; }
   .main-1 .font-a {
     display: flex;
     justify-content: center; }
@@ -122,14 +124,54 @@ header {
     font-size: 20px;
     line-height: 2.5; }
 
-footer {
+.footer {
   background: #a1d6e2;
   display: flex;
-  justify-content: space-between; }
-  footer .who {
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  margin-top: 100px;
+  border-top: 5px solid #187588; }
+  .footer .who {
+    margin-left: 50px;
+    width: 30%; }
+  .footer .where {
+    margin-right: 50px;
+    width: 30%;
     margin-left: 50px; }
-  footer .where {
-    margin-right: 50px; }
+  .footer .what {
+    width: 30%;
+    margin-left: 70px; }
+    .footer .what .services {
+      display: flex;
+      flex-direction: column; }
+    .footer .what a {
+      color: #187588;
+      font-size: 18px; }
+      .footer .what a:hover {
+        color: #fff; }
+  .footer h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #187588; }
+  .footer p {
+    color: #187588;
+    font-size: 18px; }
+
+footer {
+  padding: 40px 0;
+  background: #187588;
+  text-align: center; }
+  footer p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px; }
+  footer a {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 15px; }
+    footer a:hover {
+      color: rgba(255, 255, 255, 0.9); }
 
 @media only screen and (max-width: 800px) {
   .main-1 {
@@ -137,4 +179,10 @@ footer {
   .div-2 {
     display: flex;
     justify-content: center;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .footer {
+    display: block; }
+    .footer .what {
+      margin-left: 50px; }
+    .footer .what, .footer .where {
+      margin-top: 50px; } }
